@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tomate: #dc2626;
+  --color-folha: #16a34a;
+  --color-creme: #fefce8;
+}
