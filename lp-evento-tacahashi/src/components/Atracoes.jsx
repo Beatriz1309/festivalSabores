@@ -4,7 +4,7 @@ import CartaoAtracao from "./CartaoAtracao";
 function Atracoes() {
     return (
         <section id="atracoes" className="py-16 px-6 max-w-5xl mx-auto scroll-mt-20">
-            <h2 className="text-3xl font-bold text-center text-stone-800 mb-10">Cozinheiros e Produtores</h2>
+            <h2 className="text-3xl font-bold text-center text-stone-800 mb-10">Cozinheiros, Produtores, Artistas e Músicos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {evento.atracoes.map((atracao) => (
                     <CartaoAtracao
