@@ -1,12 +1,10 @@
 export const evento = {
     nome: "Festival Sabores da Alta Paulista",
-    slogan: "Três dias para provar o melhor da cozinha da região. Comida, música e cultura em um só lugar, venha viver essa experiência única
-    
-    !",
+    slogan: "Três dias para provar o melhor da cozinha da região. Comida, música e cultura em um só lugar, venha viver essa experiência única!",
     data: "4 a 6 de junho de 2027",
     horario: "Das 11h às 22h",
     local: "Recinto de Exposições — Osvaldo Cruz/SP",
-    sobre: "Vinte barracas de restaurantes, produtores rurais e cozinheiros da região, com aulas-show e uma competição de pratos feitos com ingredientes locais. A entrada é gratuita; os ingressos são só para as aulas-show com degustação.",
+    sobre: "Vinte barracas de restaurantes, produtores rurais e cozinheiros da região, com aulas-show e uma competição de pratos feitos com ingredientes locais. A entrada é gratuita; os ingressos são só para as aulas-show com degustação, que são limitadas e preenchidas por ordem de chegada no dia do evento.",
     numeros: [
         { label: "Barracas", valor: "20" },
         { label: "Aulas-show", valor: "9" },

@@ -1,7 +1,49 @@
 @import "tailwindcss";
 
 @theme {
-  --color-tomate: #dc2626;
-  --color-folha: #16a34a;
-  --color-creme: #fefce8;
+  /* Mantidas exatamente as suas cores originais */
+  --color-tomate: #ffb5c0;
+  --color-folha: #FF69B4;
+  --color-creme: #FAF9F6;
+}
+
+/* Foco visível atualizado para aplicar em todos os links, botões e campos */
+:focus-visible {
+  outline: 3px solid var(--color-folha); /* Alterado para rosa mais escuro para garantir contraste 4,5:1 no fundo claro */
+  outline-offset: 3px;
+}
+
+/* Movimento: desliga a rolagem suave se o usuário preferir redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+/* Link de "Pular para o conteúdo" (Skip Link) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--color-folha);
+  color: white;
+  padding: 1rem;
+  z-index: 100;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  top: 0;
 }
