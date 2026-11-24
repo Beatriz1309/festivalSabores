@@ -1,4 +1,5 @@
 import { evento } from "../data/evento";
+import BotaoLembrete from "./BotaoLembrete";
 
 function Hero() {
     return (
@@ -14,10 +15,14 @@ function Hero() {
                     <p className="mb-2">📅 <strong className="text-stone-700">{evento.data}</strong> — {evento.horario}</p>
                     <p>📍 <strong>{evento.local}</strong></p>
                 </div>
-                <div>
-                    <a href="#inscricao" className="inline-block bg-tomate text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-red-700 transition transform hover:-translate-y-0.5">
+                <div className="mt-8 flex flex-col items-center gap-2">
+                    <a
+                        href="#inscricao"
+                        className="inline-block bg-tomate text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-red-700 transition transform hover:-translate-y-0.5"
+                    >
                         Inscreva-se Agora
                     </a>
+                    <BotaoLembrete />
                 </div>
             </div>
         </section>
